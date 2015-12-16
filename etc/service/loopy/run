@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /loopy.py /var/run/loopy.pid | logger -t loopy

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f /var/run/loopy.pid ]
+then
+  kill $(cat /var/run/loopy.pid) || true
+  rm /var/run/loopy.pid
+fi
+exit 1
